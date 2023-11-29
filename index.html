@@ -1,0 +1,1156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/amazon.jpg">
+    <title>Amazon.com</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="nav-logo">
+                <div class="logo"></div>
+            </div>
+
+            <div class="nav-address">
+                <div id="nav-add1">
+                    <p class="add-first">Deliver To</p>
+                    <div class="add-icon">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p class="add-second">india</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="nav-search">
+                <select class="search-select">
+                    <option>All</option>
+                </select>
+                <input type="text" placeholder="search Amazon" class="search-input">
+                <div class="search-icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>
+
+            <div class="flag">
+                <div id="flag-1">
+                    <div class="flag-img">
+                        <img src="images/us_flag.jpg" alt="US-DLAG">
+                    </div>
+                    <div>EN</div>
+                    <div><i class="fa-solid fa-sort-down"></i></div>
+                </div>
+            </div>
+
+            <div class="nav-signin">
+                <div class="space">
+                    <p><span>Hello,Sign in</span></p>
+                    <p class="nav-second">Account & Lists</p>
+                </div>
+            </div>
+
+            <div class="nav-return">
+                <div class="space">
+                    <p><span>Returns</span></p>
+                    <p class="nav-second">& Orders</p>
+                </div>
+            </div>
+
+            <div class="nav-cart">
+                <div class="space">
+                    <i class="fa-solid fa-cart-shopping"></i>Cart
+                </div>
+            </div>
+        </div>
+
+        <div id="panel">
+            <div id="panel-all">
+                <div id="panel-icon">
+                    <div id="icon-1">
+                        <i class="fa-solid fa-bars"></i>
+                        <h3>All</h3>
+                    </div>
+                </div>
+
+                <div id="panel-items">
+                    <div id="items">
+                        <ul>
+                            <li><a href="https://www.amazon.com/gp/goldbox?ref_=nav_cs_gb">Today's Deals</a></li>
+                            <li><a href="https://www.amazon.com/gp/buyagain?ie=UTF8&ref_=nav_cs_buy_again">Buy Again</a></li>
+                            <li><a href="https://www.amazon.com/hz/contact-us/foresight/hubgateway">Customer Service</a></li>
+                            <li><a href="https://www.amazon.com/registries?ref_=nav_cs_registry&ref_=nav_cs_registry">Registry</a></li>
+                            <li><a href="https://www.amazon.com/gift-cards/b/?ie=UTF8&node=2238192011&ref_=nav_cs_gc">Gift Cards</a></li>
+                            <li><a href="https://www.amazon.com/b/?_encoding=UTF8&ld=AZUSSOA-sell&node=12766669011&ref_=nav_cs_sell">Sell</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- side nevigation  -->
+
+
+    <div class="sidebar-container-navigation sidebar-close" id="sidebar-container-navigation-id">
+        <div class="sidebar-left-part">
+            <div class="side-left">
+                <div class="sidebar-top">
+                    <i class="fa-solid fa-circle-user" id="sidebar-top-i"></i>
+                    <h2>Hello, <span>Sign in</span></h2>
+                </div>
+                
+                <button id="close-id">
+                    <i class="fa-solid fa-xmark close"></i>
+                </button>
+
+                <div class="sider-under">
+                    <div class="sider-under-first">
+                        <div id="sider-first" class="line">
+                            <h2 class="sider-under-h2">Digital Content & Devices </h2>
+                            <h3 class="sider-under-h3">Amazon Music<i class="fa-solid fa-angle-right"></i></h3>
+                            <h3 class="sider-under-h3">Kindle E-readers & Books<i class="fa-solid fa-angle-right"></i>
+                            </h3>
+                            <h3 class="sider-under-h3">Amazon Appstore<i class="fa-solid fa-angle-right"></i></h3>
+                        </div>
+
+                        <div id="sider-second">
+                            <h2 class="sider-under-h2">Shop By Department</h2>
+                            <h3 class="sider-under-h3">Electronics<i class="fa-solid fa-angle-right"></i></h3>
+                            <h3 class="sider-under-h3">Computer<i class="fa-solid fa-angle-right"></i></h3>
+                            <h3 class="sider-under-h3">Smart Home<i class="fa-solid fa-angle-right"></i></h3>
+                            <h3 class="sider-under-h3">Arts & Crafts<i class="fa-solid fa-angle-right"></i></h3>
+                            <h3 class="sider-under-h3 side" onclick="hideme()">See All<i class="fa-solid fa-angle-down"></i></h3>
+                            <div id="hide">
+                                <h3 class="sider-under-h3">Automotive<i class="fa-solid fa-angle-right"></i></h3>
+                                <h3 class="sider-under-h3">Baby<i class="fa-solid fa-angle-right"></i></h3>
+                                <h3 class="sider-under-h3">Beauty and personal Care<i class="fa-solid fa-angle-right"></i></h3>
+                                <h3 class="sider-under-h3">Women's Fashion<i class="fa-solid fa-angle-right"></i></h3>
+                                <h3 class="sider-under-h3">Men's Fashion<i class="fa-solid fa-angle-right"></i></h3>
+                                <h3 class="sider-under-h3">Girl's Fashion<i class="fa-solid fa-angle-right"></i></h3>
+                                <h3 class="sider-under-h3">Boy's Fashion<i class="fa-solid fa-angle-right"></i></h3>
+                                <h3 class="sider-under-h3">Health and Household<i class="fa-solid fa-angle-right"></i></h3>
+                                <h3 class="sider-under-h3">Home and Kitchen<i class="fa-solid fa-angle-right"></i></h3>
+                                <h3 class="sider-under-h3">Indusrial and Scientific<i class="fa-solid fa-angle-right"></i></h3>
+                            </div>
+                            <h3 class="line"></h3>
+                        </div>
+
+                        <div id="sider-third">
+                            <h2 class="sider-under-h2">Programs & Features</h2>
+                            <h3 class="sider-under-h3">Gift Cards<i class="fa-solid fa-angle-right"></i></h3>
+                            <h3 class="sider-under-h3">Shop By interest</h3>
+                            <h3 class="sider-under-h3">Amazon Live<i class="fa-solid fa-angle-right"></i></h3>
+                            <h3 class="sider-under-h3">International shopping<i class="fa-solid fa-angle-right"></i>
+                            </h3>
+                            <h3 class="sider-under-h3 side" onclick="hideme2()">See All<i class="fa-solid fa-angle-down"></i></h3>
+                            <div id="hide-2">
+                                <h3 class="sider-under-h3">Amazon Second Chance<i class="fa-solid fa-angle-right"></i></h3>
+                            </div>
+                            <h3 class="line"></h3>
+                        </div>
+
+                        <div id="sider-four">
+                            <h2 class="sider-under-h2">Help & Settings</h2>
+                            <h3 class="sider-under-h3">Your Account</h3>
+                            <h3 class="sider-under-h3 side-four"><i class="fa-solid fa-globe"></i>English</h3><br>
+                            <h3 class="sider-under-h3 side-four"><img src="images/us_flag.jpg" alt="image">United States</h3>
+                            <h3 class="sider-under-h3">Customer Services</h3>
+                            <h3 class="sider-under-h3">Sign Out</h3>
+                            <h3 class="line"></h3>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <section>
+        <div class="img-container">
+            <div class="image-list">
+                <div class="img-iteam">
+                    <img src="images/1.jpg" alt="image">
+                </div>
+                <div class="img-iteam">
+                    <img src="images/2.jpg" alt="image">
+                </div>
+                <div class="img-iteam">
+                    <img src="images/3.jpg" alt="image">
+                </div>
+                <div class="img-iteam">
+                    <img src="images/4.jpg" alt="image">
+                </div>
+                <div class="img-iteam">
+                    <img src="images/5.jpg" alt="image">
+                </div>
+            </div>
+
+            <div class="image-btn-container">
+                <button class="slider-btn" id="slide-btn-left"><i class="fa-solid fa-chevron-left"></i></button>
+                <button class="slider-btn" id="slide-btn-right"><i class="fa-solid fa-chevron-right"></i></button>
+            </div>
+
+            <div class="image-line">
+                <div class="image-line-p">
+                    <p>You are on amazon.com. You can also shop on Amazon India for millions of products with fast local
+                        delivery. <span><a href="https://www.amazon.in/?ref=aisgw_intl_stripe_in" target="_blank">Click here to go to amazon.in</a></span></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="shopping">
+            <div class="shop-section">
+                <div class="box1 box">
+
+                    <div class="shop-heading">
+                        <h3>Top Deal</h3>
+                    </div>
+
+                    <div class="shop-picture" id="box1-picture">
+                        <img src="images/6.jpg" alt="Top Deal">
+                        <div class="discount">
+                            <div class="dis-box">
+                                Up to 54% off
+                            </div>
+                            <h3>Vorspack backpacks, handbags, and more</h3>
+                        </div>
+                    </div>
+
+                    <div class="shop-bottom">
+                        <h4>See all deals</h4>
+                    </div>
+
+                </div>
+
+                <div class="box2 box">
+
+                    <div class="shop-heading">
+                        <h3>Health & Personal Care</h3>
+                    </div>
+
+                    <div class="shop-picture">
+                        <img src="images/8.jpg" alt="Health & Personal Care">
+                    </div>
+
+                    <div class="shop-bottom">
+                        <h4>Shop now</h4>
+                    </div>
+                </div>
+
+                <div class="box3 box">
+                    <div class="shop-heading">
+                        <h3>Electronics</h3>
+                    </div>
+
+                    <div class="shop-picture">
+                        <img src="images/7.jpg" alt="Electronics">
+                    </div>
+
+                    <div class="shop-bottom">
+                        <h4>See more</h4>
+                    </div>
+                </div>
+
+                <div class="box4 box">
+                    <div class="shop-heading">
+                        <h3>Home & Kitchen Under $30</h3>
+                    </div>
+
+                    <div class="shop-picture">
+                        <img src="images/9.jpg" alt="Home & Kitchen Under $30">
+                    </div>
+
+                    <div class="shop-bottom">
+                        <h4>Shop now</h4>
+                    </div>
+                </div>
+
+                <div class="box5 box">
+                    <div class="shop-heading">
+                        <h3>Toys Under $30</h3>
+                    </div>
+
+                    <div class="shop-picture">
+                        <img src="images/10.jpg" alt="Toys Under $30">
+                    </div>
+
+                    <div class="shop-bottom">
+                        <h4>Shop now</h4>
+                    </div>
+                </div>
+
+                <div class="box6 box">
+                    <div class="shop-heading">
+                        <h3>Computers & Accessories</h3>
+                    </div>
+
+                    <div class="shop-picture">
+                        <img src="images/12.jpg" alt="Computers & Accessories">
+                    </div>
+
+                    <div class="shop-bottom">
+                        <h4>Shop now</h4>
+                    </div>
+                </div>
+
+                <div class="box7 box">
+                    <div class="shop-heading">
+                        <h3>Shop deals in Fashion</h3>
+                    </div>
+
+                    <div class="shop-picture" id="box7-picture">
+                        <img src="images/11.png" alt="Shop deals in Fashion">
+                    </div>
+
+                    <div class="shop-bottom">
+                        <h4>See all deals</h4>
+                    </div>
+                </div>
+
+                <div class="box8 box">
+                    <div class="shop-heading">
+                        <h3>Beauty picks</h3>
+                    </div>
+
+                    <div class="shop-picture">
+                        <img src="images/13.jpg" alt="Beauty picks">
+                    </div>
+
+                    <div class="shop-bottom">
+                        <h4>Shop now</h4>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <main id="main">
+
+        <div class="shopping-book">
+            <div class="shopping-book-heading">
+                <h3>Top Sellers in Books for you</h3>
+            </div>
+            <div class="shopping-book-images">
+                <a href="https://www.amazon.com/True-Christianity-Bro-Steve-Winter/dp/1440448590/?_encoding=UTF8&pd_rd_w=RNyLs&content-id=amzn1.sym.cfca505f-0d6d-44b6-b071-d4633ed39e36&pf_rd_p=cfca505f-0d6d-44b6-b071-d4633ed39e36&pf_rd_r=M1JD0FPDPKKS7HZGK4XX&pd_rd_wg=2TAMI&pd_rd_r=bb2e90a2-1469-4271-9e32-92162fe98218&ref_=pd_gw_exports_top_sellers_by_gl_rec">
+                    <img src="bookimages/1.jpg" alt="img" class="shopping-image">
+                </a>
+
+                <a href="https://www.amazon.in/God-Creator-Universe-Legal-Manual/dp/1693954575">
+                    <img src="bookimages/2.jpg" alt="img" class="shopping-image">
+                </a>
+
+                <a href="https://www.amazon.com/Spiritual-Anatomy-Meditation-Chakras-Journey/dp/1538740958">
+                    <img src="bookimages/3.jpg" alt="img" class="shopping-image">
+                </a>
+
+                <a href="https://www.amazon.com/RHYTHM-LOVE-Dr-K-Mathew/dp/B0CKY8W8JR/?_encoding=UTF8&pd_rd_w=1aEIR&content-id=amzn1.sym.cfca505f-0d6d-44b6-b071-d4633ed39e36&pf_rd_p=cfca505f-0d6d-44b6-b071-d4633ed39e36&pf_rd_r=RHDPFT2P4RVKNHJFF5KB&pd_rd_wg=LJPqD&pd_rd_r=43dfd568-16cb-4852-896a-ea41e81d4b25&ref_=pd_gw_exports_top_sellers_by_gl_rec">
+                    <img src="bookimages/4.jpg" alt="img" class="shopping-image">
+                </a>
+
+                <a href="https://www.amazon.com/Future-Hiring-Onboarding-Powered-RESOURCES/dp/B0CFZL14Q2">
+                    <img src="bookimages/5.jpg" alt="img" class="shopping-image">
+                </a>
+
+                <a href="https://www.amazon.in/Ethical-Analyst-Balancing-Data-Conscience-ebook/dp/B0CJS4SPCJ">
+                    <img src="bookimages/6.jpg" alt="img" class="shopping-image">
+                </a>
+
+                <a href="https://www.amazon.in/Secrets-Bible-Rajkumar-Kore-ebook/dp/B0CKCV6KYX/ref=sr_1_3?adgrpid=1321614586625896&hvadid=82601181088783&hvbmt=bb&hvdev=c&hvlocphy=148819&hvnetw=o&hvqmt=p&hvtargid=kwd-82601797630316%3Aloc-90&hydadcr=23641_2291795&keywords=bible+secrets&qid=1699333718&sr=8-3">
+                    <img src="bookimages/7.jpg" alt="img" class="shopping-image">
+                </a>
+
+                <a href="https://www.amazon.in/Rosy-Petals-Poet-Tree-Co-Author-ebook/dp/B0CL3RR2KZ">
+                    <img src="bookimages/8.jpg" alt="img" class="shopping-image">
+                </a>
+
+                <a href="https://www.amazon.com/Third-Eye-Awakening-Consciousness-Enlightenment/dp/1091565988/?_encoding=UTF8&pd_rd_w=5Wj84&content-id=amzn1.sym.6e9da02f-f7a3-444f-aea6-9ef09ed8bb89%3Aamzn1.symc.c345d0cb-1369-4947-9d0b-b27eb6553273&pf_rd_p=6e9da02f-f7a3-444f-aea6-9ef09ed8bb89&pf_rd_r=K04DTZBTD2PAGVBDPHA1&pd_rd_wg=JXnyb&pd_rd_r=1efaa5d3-4faf-4448-9203-e38b3cd8bd54&ref_=pd_gw_ci_mcx_mr_hp_d">
+                    <img src="bookimages/9.jpg" alt="img" class="shopping-image">
+                </a>
+
+                <a href="https://www.amazon.com/Land-Gods-Long-Hidden-Visiting-Shambhala/dp/1639940243/?_encoding=UTF8&pd_rd_w=5Wj84&content-id=amzn1.sym.6e9da02f-f7a3-444f-aea6-9ef09ed8bb89%3Aamzn1.symc.c345d0cb-1369-4947-9d0b-b27eb6553273&pf_rd_p=6e9da02f-f7a3-444f-aea6-9ef09ed8bb89&pf_rd_r=K04DTZBTD2PAGVBDPHA1&pd_rd_wg=JXnyb&pd_rd_r=1efaa5d3-4faf-4448-9203-e38b3cd8bd54&ref_=pd_gw_ci_mcx_mr_hp_d">
+                    <img src="bookimages/10.jpg" alt="img" class="shopping-image">
+                </a>
+
+                <a href="https://www.amazon.com/Samadhi-Consciousness-Existence-Ivan-Antic/dp/198606607X/?_encoding=UTF8&pd_rd_w=aa03J&content-id=amzn1.sym.6e9da02f-f7a3-444f-aea6-9ef09ed8bb89%3Aamzn1.symc.c345d0cb-1369-4947-9d0b-b27eb6553273&pf_rd_p=6e9da02f-f7a3-444f-aea6-9ef09ed8bb89&pf_rd_r=YZ25C0H8WC8TT85QWW43&pd_rd_wg=4PzyS&pd_rd_r=6b61602f-5634-4fe5-823e-91c48d6851a4&ref_=pd_gw_ci_mcx_mr_hp_d">
+                    <img src="bookimages/11.jpg" alt="img" class="shopping-image">
+                </a>
+
+                <a href="https://www.amazon.com/Frequency-Personal-Vibration-Penney-Peirce/dp/1582702152/?_encoding=UTF8&pd_rd_w=8xTKL&content-id=amzn1.sym.6e9da02f-f7a3-444f-aea6-9ef09ed8bb89%3Aamzn1.symc.c345d0cb-1369-4947-9d0b-b27eb6553273&pf_rd_p=6e9da02f-f7a3-444f-aea6-9ef09ed8bb89&pf_rd_r=9GSXP7RNKWM92W118KVA&pd_rd_wg=3ArG4&pd_rd_r=ec9db3ff-1a98-480c-a4a1-381e95d57744&ref_=pd_gw_ci_mcx_mr_hp_d">
+                    <img src="bookimages/12.jpg" alt="img" class="shopping-image">
+                </a>
+
+                <a href="https://www.amazon.com/Secret-World-Government-Guidance-Revived/dp/1639940316/?_encoding=UTF8&pd_rd_w=8xTKL&content-id=amzn1.sym.6e9da02f-f7a3-444f-aea6-9ef09ed8bb89%3Aamzn1.symc.c345d0cb-1369-4947-9d0b-b27eb6553273&pf_rd_p=6e9da02f-f7a3-444f-aea6-9ef09ed8bb89&pf_rd_r=9GSXP7RNKWM92W118KVA&pd_rd_wg=3ArG4&pd_rd_r=ec9db3ff-1a98-480c-a4a1-381e95d57744&ref_=pd_gw_ci_mcx_mr_hp_d">
+                    <img src="bookimages/13.jpg" alt="img" class="shopping-image">
+                </a>
+
+                <a href="https://www.amazon.com/Sacred-Woman-Healing-Feminine-Spirit/dp/0345434862/?_encoding=UTF8&pd_rd_w=8xTKL&content-id=amzn1.sym.6e9da02f-f7a3-444f-aea6-9ef09ed8bb89%3Aamzn1.symc.c345d0cb-1369-4947-9d0b-b27eb6553273&pf_rd_p=6e9da02f-f7a3-444f-aea6-9ef09ed8bb89&pf_rd_r=9GSXP7RNKWM92W118KVA&pd_rd_wg=3ArG4&pd_rd_r=ec9db3ff-1a98-480c-a4a1-381e95d57744&ref_=pd_gw_ci_mcx_mr_hp_d">
+                    <img src="bookimages/14.jpg" alt="img" class="shopping-image">
+                </a>
+
+                <a href="https://www.amazon.com/Secret-Doctrine-H-P-Blavatsky/dp/1461006287/?_encoding=UTF8&pd_rd_w=8xTKL&content-id=amzn1.sym.6e9da02f-f7a3-444f-aea6-9ef09ed8bb89%3Aamzn1.symc.c345d0cb-1369-4947-9d0b-b27eb6553273&pf_rd_p=6e9da02f-f7a3-444f-aea6-9ef09ed8bb89&pf_rd_r=9GSXP7RNKWM92W118KVA&pd_rd_wg=3ArG4&pd_rd_r=ec9db3ff-1a98-480c-a4a1-381e95d57744&ref_=pd_gw_ci_mcx_mr_hp_d">
+                    <img src="bookimages/15.jpg" alt="img" class="shopping-image">
+                </a>
+
+                <a href="https://www.amazon.com/Art-Alchemy-Revelation-Philosophers-Mystery/dp/B09WRV1JVW/?_encoding=UTF8&pd_rd_w=8xTKL&content-id=amzn1.sym.6e9da02f-f7a3-444f-aea6-9ef09ed8bb89%3Aamzn1.symc.c345d0cb-1369-4947-9d0b-b27eb6553273&pf_rd_p=6e9da02f-f7a3-444f-aea6-9ef09ed8bb89&pf_rd_r=9GSXP7RNKWM92W118KVA&pd_rd_wg=3ArG4&pd_rd_r=ec9db3ff-1a98-480c-a4a1-381e95d57744&ref_=pd_gw_ci_mcx_mr_hp_d">
+                    <img src="bookimages/16.jpg" alt="img" class="shopping-image">
+                </a>
+
+                <a href="https://www.amazon.com/Secret-Teachings-All-Ages-Encyclopedic/dp/0486471438/?_encoding=UTF8&pd_rd_w=8js6O&content-id=amzn1.sym.6e9da02f-f7a3-444f-aea6-9ef09ed8bb89%3Aamzn1.symc.c345d0cb-1369-4947-9d0b-b27eb6553273&pf_rd_p=6e9da02f-f7a3-444f-aea6-9ef09ed8bb89&pf_rd_r=ARJM0SVDCPN2JCHHEGYV&pd_rd_wg=HSU0w&pd_rd_r=a5ac26a7-6b75-4aad-acc6-c17960e8ec16&ref_=pd_gw_ci_mcx_mr_hp_d">
+                    <img src="bookimages/17.jpg" alt="img" class="shopping-image">
+                </a>
+
+                <a href="https://www.amazon.com/Compendium-Emerald-Tablets-Billy-Carson/dp/0578476169/?_encoding=UTF8&pd_rd_w=8js6O&content-id=amzn1.sym.6e9da02f-f7a3-444f-aea6-9ef09ed8bb89%3Aamzn1.symc.c345d0cb-1369-4947-9d0b-b27eb6553273&pf_rd_p=6e9da02f-f7a3-444f-aea6-9ef09ed8bb89&pf_rd_r=ARJM0SVDCPN2JCHHEGYV&pd_rd_wg=HSU0w&pd_rd_r=a5ac26a7-6b75-4aad-acc6-c17960e8ec16&ref_=pd_gw_ci_mcx_mr_hp_d">
+                    <img src="bookimages/18.jpg" alt="img" class="shopping-image">
+                </a>
+
+                <!-- <img src="bookimages/3.jpg" alt="img" class="shopping-image">
+                <img src="bookimages/4.jpg" alt="img" class="shopping-image">
+                <img src="bookimages/5.jpg" alt="img" class="shopping-image">
+                <img src="bookimages/6.jpg" alt="img" class="shopping-image">
+                <img src="bookimages/7.jpg" alt="img" class="shopping-image">
+                <img src="bookimages/8.jpg" alt="img" class="shopping-image">
+                <img src="bookimages/9.jpg" alt="img" class="shopping-image">
+                <img src="bookimages/10.jpg" alt="img" class="shopping-image">
+                <img src="bookimages/11.jpg" alt="img" class="shopping-image">
+                <img src="bookimages/12.jpg" alt="img" class="shopping-image">
+                <img src="bookimages/13.jpg" alt="img" class="shopping-image">
+                <img src="bookimages/14.jpg" alt="img" class="shopping-image">
+                <img src="bookimages/15.jpg" alt="img" class="shopping-image">
+                <img src="bookimages/16.jpg" alt="img" class="shopping-image">
+                <img src="bookimages/17.jpg" alt="img" class="shopping-image">
+                <img src="bookimages/18.jpg" alt="img" class="shopping-image"> -->
+            </div>
+        </div>
+
+
+
+        <div class="shopping-book deals-under25">
+            <div id="deal-first">
+                <div class="shopping-book-heading">
+                    <h3>Deals Under $25</h3>
+                </div>
+
+                <div class="shopping-book-images">
+                    <div class="deals-under25-bottom">
+                        <img src="cards/9.jpg" alt="img" class="shopping-image">
+                        <div class="bottom25">
+                            <div class="offer">
+                                <h3>20% off</h3>
+                                <h2>Deal</h2>
+                            </div>
+                            <div class="list-price">
+                                <h2><span class="zero-span">$</span><span class="first-span">13.98</span><span
+                                        class="second-span">List Price:</span><span class="third-span">$24.99</span>
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="deals-under25-bottom">
+                        <img src="cards/10.jpg" alt="img" class="shopping-image">
+                        <div class="bottom25">
+                            <div class="offer">
+                                <h3>17% off</h3>
+                                <h2>Deal</h2>
+                            </div>
+                            <div class="list-price">
+                                <h2><span class="zero-span">$</span><span class="first-span">10.38</span><span
+                                        class="second-span">List Price:</span><span class="third-span">$12.49</span>
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="deals-under25-bottom">
+                        <img src="cards/11.jpg" alt="img" class="shopping-image">
+                        <div class="bottom25">
+                            <div class="offer">
+                                <h3>18% off</h3>
+                                <h2>Deal</h2>
+                            </div>
+                            <div class="list-price">
+                                <h2><span class="zero-span">$</span><span class="first-span">17.99</span><span
+                                        class="second-span">List Price:</span><span class="third-span">$21.99</span>
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="deals-under25-bottom">
+                        <img src="cards/12.jpg" alt="img" class="shopping-image">
+                        <div class="bottom25">
+                            <div class="offer">
+                                <h3>23% off</h3>
+                                <h2>Deal</h2>
+                            </div>
+                            <div class="list-price">
+                                <h2><span class="zero-span">$</span><span class="first-span">9.99</span><span
+                                        class="second-span">List Price:</span><span class="third-span">$12.99</span>
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="deals-under25-bottom">
+                        <img src="cards/13.jpg" alt="img" class="shopping-image">
+                        <div class="bottom25">
+                            <div class="offer">
+                                <h3>15% off</h3>
+                                <h2>Deal</h2>
+                            </div>
+                            <div class="list-price">
+                                <h2><span class="zero-span">$</span><span class="first-span">22.01</span><span
+                                        class="second-span">List Price:</span><span class="third-span">$25.89</span>
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="deals-under25-bottom">
+                        <img src="cards/14.jpg" alt="img" class="shopping-image">
+                        <div class="bottom25">
+                            <div class="offer">
+                                <h3>30% off</h3>
+                                <h2>Deal</h2>
+                            </div>
+                            <div class="list-price">
+                                <h2><span class="zero-span">$</span><span class="first-span">13.98</span><span
+                                        class="second-span">List Price:</span><span class="third-span">$19.99</span>
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="deals-under25-bottom">
+                        <img src="cards/15.jpg" alt="img" class="shopping-image">
+                        <div class="bottom25">
+                            <div class="offer">
+                                <h3>23% off</h3>
+                                <h2>Deal</h2>
+                            </div>
+                            <div class="list-price">
+                                <h2><span class="zero-span">$</span><span class="first-span">16.85</span><span
+                                        class="second-span">List Price:</span><span class="third-span">$21.99</span>
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="deals-under25-bottom">
+                        <img src="cards/16.jpg" alt="img" class="shopping-image">
+                        <div class="bottom25">
+                            <div class="offer">
+                                <h3>32% off</h3>
+                                <h2>Deal</h2>
+                            </div>
+                            <div class="list-price">
+                                <h2><span class="zero-span">$</span><span class="first-span">8.85</span><span
+                                        class="second-span">List Price:</span><span class="third-span">$12.95</span>
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="deals-under25-bottom">
+                        <img src="cards/17.jpg" alt="img" class="shopping-image">
+                        <div class="bottom25">
+                            <div class="offer">
+                                <h3>15% off</h3>
+                                <h2>Deal</h2>
+                            </div>
+                            <div class="list-price">
+                                <h2><span class="zero-span">$</span><span class="first-span">7.21</span><span
+                                        class="second-span">List Price:</span><span class="third-span">$8.50</span>
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="deals-under25-bottom">
+                        <img src="cards/18.jpg" alt="img" class="shopping-image">
+                        <div class="bottom25">
+                            <div class="offer">
+                                <h3>22% off</h3>
+                                <h2>Deal</h2>
+                            </div>
+                            <div class="list-price">
+                                <h2><span class="zero-span">$</span><span class="first-span">21.92</span><span
+                                        class="second-span">List Price:</span><span class="third-span">$27.99</span>
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- now  -->
+
+        <div id="toys">
+
+            <div class="box1 box">
+
+                <div class="shop-heading toy-heading">
+                    <h3>Deals on most-Loved finds</h3>
+                </div>
+                <div class="shop-picture">
+                    <img src="cards/1.png" alt="Top Deal">
+                </div>
+                <div class="shop-bottom toy-bottom">
+                    <h4>See all</h4>
+                </div>
+
+            </div>
+
+            <div class="box2 box">
+
+                <div class="shop-heading toy-heading">
+                    <h3>Laptops for every need</h3>
+                </div>
+                <div class="shop-picture">
+                    <img src="cards/2.jpg" alt="Top Deal">
+                </div>
+                <div class="shop-bottom toy-bottom">
+                    <h4>Find your laptop here</h4>
+                </div>
+
+            </div>
+
+            <div class="box3 box">
+
+                <div class="shop-heading toy-heading">
+                    <h3>Playres's paradise starts here</h3>
+                </div>
+                <div class="shop-picture">
+                    <img src="cards/3.jpg" alt="Top Deal">
+                </div>
+                <div class="shop-bottom toy-bottom">
+                    <h4>shop video games</h4>
+                </div>
+
+            </div>
+
+            <div class="box4 box">
+
+                <div class="shop-heading toy-heading">
+                    <h3>Creating busiess solutions</h3>
+                </div>
+                <div class="shop-picture">
+                    <img src="cards/4.jpg" alt="Top Deal">
+                </div>
+                <div class="shop-bottom toy-bottom">
+                    <h4>See amore software products</h4>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="sports-iteams">
+            <div class="shopping-book">
+                <div class="shopping-book-heading">
+                    <h3>Best Sellers in Sports & Outdoors</h3>
+                </div>
+                <div class="shopping-book-images sport">
+                    <img src="cloths/1.jpg" alt="img" class="shopping-image">
+                    <img src="cloths/2.jpg" alt="img" class="shopping-image">
+                    <img src="cloths/3.jpg" alt="img" class="shopping-image">
+                    <img src="cloths/4.jpg" alt="img" class="shopping-image">
+                    <img src="cloths/5.jpg" alt="img" class="shopping-image">
+                    <img src="cloths/6.jpg" alt="img" class="shopping-image" id="sport-6">
+                    <img src="cloths/7.jpg" alt="img" class="shopping-image">
+                    <img src="cloths/8.jpg" alt="img" class="shopping-image">
+                    <img src="cloths/9.jpg" alt="img" class="shopping-image">
+                    <img src="cloths/10.jpg" alt="img" class="shopping-image">
+                    <img src="cloths/11.jpg" alt="img" class="shopping-image">
+                    <img src="cloths/12.jpg" alt="img" class="shopping-image">
+                    <img src="cloths/13.jpg" alt="img" class="shopping-image">
+                    <img src="cloths/14.jpg" alt="img" class="shopping-image">
+                    <img src="cloths/15.jpg" alt="img" class="shopping-image">
+
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="shopping-book best-seller-in-books">
+            <div class="shopping-book-heading">
+                <h3>Best Sellers in Books</h3>
+            </div>
+            <div class="shopping-book-images">
+                <img src="bookimages/20.jpg" alt="img" class="shopping-image">
+                <img src="bookimages/21.jpg" alt="img" class="shopping-image">
+                <img src="bookimages/22.jpg" alt="img" class="shopping-image">
+                <img src="bookimages/23.jpg" alt="img" class="shopping-image">
+                <img src="bookimages/24.jpg" alt="img" class="shopping-image">
+                <img src="bookimages/25.jpg" alt="img" class="shopping-image">
+                <img src="bookimages/26.jpg" alt="img" class="shopping-image">
+                <img src="bookimages/27.jpg" alt="img" class="shopping-image">
+                <img src="bookimages/28.jpg" alt="img" class="shopping-image">
+                <img src="bookimages/29.jpg" alt="img" class="shopping-image">
+                <img src="bookimages/30.jpg" alt="img" class="shopping-image">
+                <img src="bookimages/31.jpg" alt="img" class="shopping-image">
+                <img src="bookimages/32.jpg" alt="img" class="shopping-image">
+                <img src="bookimages/33.jpg" alt="img" class="shopping-image">
+                <img src="bookimages/34.jpg" alt="img" class="shopping-image">
+                <img src="bookimages/35.jpg" alt="img" class="shopping-image">
+            </div>
+        </div>
+
+        <div id="home-fresh-ideas">
+
+            <div class="box1 box">
+
+                <div class="shop-heading toy-heading">
+                    <h3>Home refresh ideas</h3>
+                </div>
+                <div class="shop-picture">
+                    <img src="cards/5.jpg" alt="Top Deal">
+                </div>
+                <div class="shop-bottom toy-bottom">
+                    <h4>Shop Kitchen upgrades</h4>
+                </div>
+
+            </div>
+
+            <div class="box2 box">
+
+                <div class="shop-heading toy-heading">
+                    <h3>Frequently repurchased in Drugstore</h3>
+                </div>
+                <div class="shop-picture">
+                    <img src="cards/6.png" alt="Top Deal">
+                </div>
+                <div class="shop-bottom toy-bottom">
+                    <h4>Shop now</h4>
+                </div>
+
+            </div>
+
+            <div class="box3 box">
+
+                <div class="shop-heading toy-heading">
+                    <h3>Upgrade your office furniture</h3>
+                </div>
+                <div class="shop-picture">
+                    <img src="cards/7.jpg" alt="Top Deal">
+                </div>
+                <div class="shop-bottom toy-bottom">
+                    <h4>Shop now</h4>
+                </div>
+
+            </div>
+
+            <div class="box4 box">
+
+                <div class="shop-heading toy-heading">
+                    <h3>For your Fitness Needs</h3>
+                </div>
+                <div class="shop-picture">
+                    <img src="cards/8.jpg" alt="Top Deal">
+                </div>
+                <div class="shop-bottom toy-bottom">
+                    <h4>Shop now</h4>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="shopping-book cloth-jewellry">
+            <div class="shopping-book-heading">
+                <h3>Best Sellers in Clothing, Shoes & Jewelry</h3>
+            </div>
+            <div class="shopping-book-images">
+                <img src="cloths/16.jpg" alt="img" class="shopping-image">
+                <img src="cloths/17.jpg" alt="img" class="shopping-image">
+                <img src="cloths/18.jpg" alt="img" class="shopping-image">
+                <img src="cloths/19.jpg" alt="img" class="shopping-image">
+                <img src="cloths/20.jpg" alt="img" class="shopping-image">
+                <img src="cloths/21.jpg" alt="img" class="shopping-image" id="shooze">
+                <img src="cloths/22.jpg" alt="img" class="shopping-image">
+                <img src="cloths/23.jpg" alt="img" class="shopping-image">
+                <img src="cloths/24.jpg" alt="img" class="shopping-image">
+                <img src="cloths/25.jpg" alt="img" class="shopping-image">
+                <img src="cloths/26.jpg" alt="img" class="shopping-image">
+                <img src="cloths/27.jpg" alt="img" class="shopping-image">
+                <img src="cloths/28.jpg" alt="img" class="shopping-image">
+                <img src="cloths/29.jpg" alt="img" class="shopping-image">
+                <img src="cloths/30.jpg" alt="img" class="shopping-image">
+
+            </div>
+        </div>
+
+        <div id="fashion">
+
+            <div class="box1 box">
+
+                <div class="shop-heading fashion-heading">
+                    <h3>Score big deals on toys</h3>
+                </div>
+                <div class="shop-picture">
+                    <img src="cards/1.png" alt="Top Deal">
+                </div>
+                <div class="shop-bottom fashion-bottom">
+                    <h4>Shop all</h4>
+                </div>
+
+            </div>
+
+            <div class="box2 box">
+
+                <div class="shop-heading fashion-heading">
+                    <h3>Fall fashion treads</h3>
+                </div>
+                <div class="shop-picture">
+                    <img src="cards/2.jpg" alt="Top Deal">
+                </div>
+                <div class="shop-bottom fashion-bottom">
+                    <h4>
+                        Shop Premiun Brands fashion
+                    </h4>
+                </div>
+
+            </div>
+
+            <div class="box3 box">
+
+                <div class="shop-heading fashion-heading">
+                    <h3>Discover fashion treads</h3>
+                </div>
+                <div class="shop-picture">
+                    <img src="cards/3.jpg" alt="Top Deal">
+                </div>
+                <div class="shop-bottom fashion-bottom">
+                    <h4>See more</h4>
+                </div>
+
+            </div>
+
+            <div class="box4 box">
+
+                <div class="shop-heading fashion-heading">
+                    <h3>Deals in Tools and Home Improvment</h3>
+                </div>
+                <div class="shop-picture">
+                    <img src="cards/4.jpg" alt="Top Deal">
+                </div>
+                <div class="shop-bottom fashion-bottom">
+                    <h4>
+                        Shop now
+                    </h4>
+                </div>
+
+            </div>
+        </div>
+
+
+    </main>
+
+
+    <div class="web-bottom-1">
+        <div class="back">
+            <a href="#"><h3>Back to top</h3></a>
+        </div>
+    </div>
+
+    <div class="web-bottom-2">
+        <div class="bottom-2-1">
+            <ul class="bottom-ul">
+                <li class="bottom-li"><a href="#" class="bottom-a bottom-a-heading">Get to Knows Us</a></li>
+                <li class="bottom-li"><a href="#" class="bottom-a">Carrers</a></li>
+                <li class="bottom-li"><a href="#" class="bottom-a">Blog</a></li>
+                <li class="bottom-li"><a href="#" class="bottom-a">About Amazon</a></li>
+                <li class="bottom-li"><a href="#" class="bottom-a">Investor Relations</a></li>
+                <li class="bottom-li"><a href="#" class="bottom-a">Amazon Devices</a></li>
+                <li class="bottom-li"><a href="#" class="bottom-a">Amazon Science</a></li>
+            </ul>
+        </div>
+
+        <div class="bottom-2-1">
+            <ul class="bottom-ul">
+                <li class="bottom-li"><a href="#" class="bottom-a bottom-a-heading">Make Money With US</a></li>
+                <li class="bottom-li"><a href="#" class="bottom-a">Sell products on Amazon</a></li>
+                <li class="bottom-li"><a href="#" class="bottom-a">Sell on Amazon Business</a></li>
+                <li class="bottom-li"><a href="#" class="bottom-a">Sell apps on Amazon</a></li>
+                <li class="bottom-li"><a href="#" class="bottom-a">Become an Affiliate</a></li>
+                <li class="bottom-li"><a href="#" class="bottom-a">Advertise Your Products</a></li>
+                <li class="bottom-li"><a href="#" class="bottom-a">Self-Publish with Us</a></li>
+                <li class="bottom-li"><a href="#" class="bottom-a">Host an Amazon Hub</a></li>
+                <li class="bottom-li"><a href="#" class="bottom-a"><span>></span>See More Make Money with Us</a></li>
+            </ul>
+        </div>
+
+        <div class="bottom-2-1">
+            <ul class="bottom-ul">
+                <li class="bottom-li"><a href="#" class="bottom-a bottom-a-heading">Amazon Payment Products</a></li>
+                <li class="bottom-li"><a href="#" class="bottom-a">Amazon Business Card</a></li>
+                <li class="bottom-li"><a href="#" class="bottom-a">Shop with Points</a></li>
+                <li class="bottom-li"><a href="#" class="bottom-a">Reload Your Balance</a></li>
+                <li class="bottom-li"><a href="#" class="bottom-a">Amazon Currency Converter</a></li>
+            </ul>
+        </div>
+
+        <div class="bottom-2-1">
+            <ul class="bottom-ul">
+                <li class="bottom-li"><a href="#" class="bottom-a bottom-a-heading">Let Us Help You</a></li>
+                <li class="bottom-li"><a href="#" class="bottom-a">Amazon and COVID-19</a></li>
+                <li class="bottom-li"><a href="#" class="bottom-a">Your Account</a></li>
+                <li class="bottom-li"><a href="#" class="bottom-a">Your Orders</a></li>
+                <li class="bottom-li"><a href="#" class="bottom-a">Shipping Rates & Policies</a></li>
+                <li class="bottom-li"><a href="#" class="bottom-a">Returns & Replacements</a></li>
+                <li class="bottom-li"><a href="#" class="bottom-a">Manage Your Content and Devices</a></li>
+                <li class="bottom-li"><a href="#" class="bottom-a">Amazon Assistant</a></li>
+                <li class="bottom-li"><a href="#" class="bottom-a">Help</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="web-bttom-3">
+
+        <div class="web-amazonlogo">
+            <img src="images/amazon_logo.png" alt="img">
+        </div>
+
+        <div class="web-bottom-boxes">
+            <div class="bottom-1">
+                <h3><span><i class="fa-solid fa-globe"></i></span>English</h3>
+            </div>
+            <div class="bottom-1">
+                <h3>$ USD - U.S.Dollar</h3>
+            </div>
+            <div class="bottom-1">
+                <h3 id="flag"><img src="images/us_flag.jpg" alt="img">United States</h3>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="web-bottom-4">
+
+        <div class="bottom-4-1">
+            <ul class="bottom-4-ul">
+                <div class="first">
+                    <li class="bottom-4-li"><a href="#" class="bottom-4-a b4-clr">Amazon Music</a></li>
+                    <li class="bottom-4-li bottom-4-li-space"><a href="#" class="bottom-4-a">Stream millions of
+                            songs</a></li>
+                </div>
+
+                <div class="first">
+                    <li class="bottom-4-li"><a href="#" class="bottom-4-a b4-clr">Amp</a></li>
+                    <li class="bottom-4-li bottom-4-li-space"><a href="#" class="bottom-4-a">Host your own
+                            live radio show
+                            with
+                            music you love</a></li>
+                </div>
+
+                <div class="first">
+                    <li class="bottom-4-li"><a href="#" class="bottom-4-a b4-clr">IMDb</a></li>
+                    <li class="bottom-4-li bottom-4-li-space"><a href="#" class="bottom-4-a">ovtes,
+                            & Celebrities</a></li>
+                </div>
+
+                <div class="first">
+                    <li class="bottom-4-li"><a href="#" class="bottom-4-a b4-clr">Ringt</a></li>
+                    <li class="bottom-4-li bottom-4-li-space"><a href="#" class="bottom-4-a">Smart Home
+                            Security Systems</a></li>
+                </div>
+
+            </ul>
+        </div>
+
+        <div class="bottom-4-1 bottom-2">
+            <ul class="bottom-4-ul">
+                <div class="first">
+                    <li class="bottom-4-li"><a href="#" class="bottom-4-a b4-clr">Amazon Advertising</a></li>
+                    <li class="bottom-4-li bottom-4-li-space"><a href="#" class="bottom-4-a">Find, attract, and
+                            engage
+                            customers</a></li>
+                </div>
+
+                <div class="first">
+                    <li class="bottom-4-li"><a href="#" class="bottom-4-a b4-clr">AmazonGlobal</a></li>
+                    <li class="bottom-4-li bottom-4-li-space"><a href="#" class="bottom-4-a">Ship Orders
+                            Internationally</a></li>
+                </div>
+
+                <div class="first">
+                    <li class="bottom-4-li"><a href="#" class="bottom-4-a b4-clr">IMDbPro</a></li>
+                    <li class="bottom-4-li bottom-4-li-space"><a href="#" class="bottom-4-a">Get Info
+                            Entertainment
+                            Professionals
+                            Need</a></li>
+                </div>
+
+                <div class="first">
+                    <li class="bottom-4-li"><a href="#" class="bottom-4-a b4-clr">eero WiFi</a></li>
+                    <li class="bottom-4-li bottom-4-li-space"><a href="#" class="bottom-4-a">Stream 4K Video
+                            in Every Room</a></li>
+                </div>
+            </ul>
+        </div>
+
+        <div class="bottom-4-1 bottom-3">
+            <ul class="bottom-4-ul">
+                <div class="first">
+                    <li class="bottom-4-li"><a href="#" class="bottom-4-a b4-clr">6pm</a></li>
+                    <li class="bottom-4-li bottom-4-li-space"><a href="#" class="bottom-4-a">Score deals
+                            on fashion brands</a></li>
+                </div>
+
+                <div class="first">
+                    <li class="bottom-4-li"><a href="#" class="bottom-4-a b4-clr">Home Services</a></li>
+                    <li class="bottom-4-li bottom-4-li-space"><a href="#" class="bottom-4-a">Experienced Pros
+                            Happiness
+                            Guarantee</a></li>
+                </div>
+
+                <div class="first">
+                    <li class="bottom-4-li"><a href="#" class="bottom-4-a b4-clr">Kindle Direct
+                            Publishing</a></li>
+                    <li class="bottom-4-li bottom-4-li-space"><a href="#" class="bottom-4-a">Indie Digital &
+                            Print Publishing
+                            Made Easy</a></li>
+                </div>
+
+                <div class="first">
+                    <li class="bottom-4-li"><a href="#" class="bottom-4-a b4-clr">Blink</a></li>
+                    <li class="bottom-4-li bottom-4-li-space"><a href="#" class="bottom-4-a">Smart Security
+                            for Every Home</a></li>
+                </div>
+            </ul>
+        </div>
+
+        <div class="bottom-4-1 bottom-4">
+            <ul class="bottom-4-ul">
+                <div class="first">
+                    <li class="bottom-4-li"><a href="#" class="bottom-4-a b4-clr">AbeBooks</a></li>
+                    <li class="bottom-4-li bottom-4-li-space"><a href="#" class="bottom-4-a">Books, art
+                            & collectibles</a></li>
+                </div>
+
+                <div class="first">
+                    <li class="bottom-4-li"><a href="#" class="bottom-4-a b4-clr">Amazon Web Services</a></li>
+                    <li class="bottom-4-li bottom-4-li-space"><a href="#" class="bottom-4-a">Scalable Cloud
+                            Computing
+                            Services</a></li>
+                </div>
+
+                <div class="first">
+                    <li class="bottom-4-li"><a href="#" class="bottom-4-a b4-clr">Prime Video DirectR</a></li>
+                    <li class="bottom-4-li bottom-4-li-space"><a href="#" class="bottom-4-a">Video
+                            Distribution
+                            Made Easy</a></li>
+                </div>
+
+                <div class="first">
+                    <li class="bottom-4-li"><a href="#" class="bottom-4-a b4-clr">Neighbors App</a></li>
+                    <li class="bottom-4-li bottom-4-li-space"><a href="#" class="bottom-4-a">Real-Time
+                            Crime
+                            & Safety Alerts</a></li>
+                </div>
+            </ul>
+        </div>
+
+        <div class="bottom-4-1 bottom-5">
+            <ul class="bottom-4-ul">
+                <div class="first">
+                    <li class="bottom-4-li"><a href="#" class="bottom-4-a b4-clr">ACX</a></li>
+                    <li class="bottom-4-li bottom-4-li-space"><a href="#" class="bottom-4-a">Audiobook Publishing
+                            Made Easy</a></li>
+                </div>
+
+                <div class="first">
+                    <li class="bottom-4-li"><a href="#" class="bottom-4-a b4-clr">Audible</a></li>
+                    <li class="bottom-4-li bottom-4-li-space"><a href="#" class="bottom-4-a">Listen to Books &
+                            Original
+                            Audio Performances</a></li>
+                </div>
+
+                <div class="first">
+                    <li class="bottom-4-li"><a href="#" class="bottom-4-a b4-clr">Shopbop</a></li>
+                    <li class="bottom-4-li bottom-4-li-space"><a href="#" class="bottom-4-a">Designer
+                            Fashion Brands</a></li>
+                </div>
+
+                <div class="first">
+                    <li class="bottom-4-li"><a href="#" class="bottom-4-a b4-clr">Amazon Subscription Boxes</a></li>
+                    <li class="bottom-4-li bottom-4-li-space"><a href="#" class="bottom-4-a">Top subscription boxes
+                            — right to your door</a></li>
+                </div>
+            </ul>
+        </div>
+
+        <div class="bottom-4-1 bottom-6">
+            <ul class="bottom-4-ul">
+                <div class="first">
+                    <li class="bottom-4-li"><a href="#" class="bottom-4-a b4-clr">Sell onAmazon</a></li>
+                    <li class="bottom-4-li bottom-4-li-space"><a href="#" class="bottom-4-a">Start a Selling
+                            Account</a></li>
+                </div>
+
+                <div class="first">
+                    <li class="bottom-4-li"><a href="#" class="bottom-4-a b4-clr">Box Office Mojo</a></li>
+                    <li class="bottom-4-li bottom-4-li-space"><a href="#" class="bottom-4-a">Find Movie
+                            Box Office Data</a></li>
+                </div>
+
+                <div class="first">
+                    <li class="bottom-4-li"><a href="#" class="bottom-4-a b4-clr">Woot!</a></li>
+                    <li class="bottom-4-li bottom-4-li-space"><a href="#" class="bottom-4-a">Deals and
+                            Shenanigans</a></li>
+                </div>
+
+                <div class="first">
+                    <li class="bottom-4-li"><a href="#" class="bottom-4-a b4-clr">PillPack</a></li>
+                    <li class="bottom-4-li bottom-4-li-space"><a href="#" class="bottom-4-a">Pharmacy
+                            Simplified</a></li>
+                </div>
+            </ul>
+        </div>
+
+        <div class="bottom-4-1 bottom-7">
+            <ul class="bottom-4-ul">
+                <div class="first">
+                    <li class="bottom-4-li"><a href="#" class="bottom-4-a b4-clr">Amazon Business</a></li>
+                    <li class="bottom-4-li bottom-4-li-space"><a href="#" class="bottom-4-a">veryt Ing or
+                            Your Business</a></li>
+                </div>
+
+                <div class="first">
+                    <li class="bottom-4-li"><a href="#" class="bottom-4-a b4-clr">Goodreads</a></li>
+                    <li class="bottom-4-li bottom-4-li-space"><a href="#" class="bottom-4-a">Book reviews
+                            recommendations</a></li>
+                </div>
+
+                <div class="first">
+                    <li class="bottom-4-li"><a href="#" class="bottom-4-a b4-clr">Zappos</a></li>
+                    <li class="bottom-4-li bottom-4-li-space"><a href="#" class="bottom-4-a">Shoes & Clothing</a></li>
+                </div>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="web-bottom-5">
+        <div class="terms">
+            <ul>
+                <li><a href="#">Conditions of USe</a></li>
+                <li><a href="#">Privacy Notice</a></li>
+                <li><a href="#">Your Adfs Privacy Choices</a></li>
+                <img src="images/bottom_logo.png" alt="logo">
+            </ul>
+        </div>
+        <div class="terms-2">
+            <i class="fa-regular fa-copyright"></i> 1996-2023, Amazon.com, Inc. or its affiliates
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
